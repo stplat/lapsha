@@ -33,7 +33,7 @@
 <meta itemprop="availability" content="http://schema.org/InStock">
 <link itemprop="url" href="{{ url('') }}/catalog/{{$item->category_slug}}/{{$item->slug}}" />
                     </div>
-                    <div class="item__button"><a class="button button--small" href="/catalog/{{$item->category_slug}}/{{$item->slug}}">Подробнее</a>
+                    <div class="item__button"><a class="button button--orange" href="/catalog/{{$item->category_slug}}/{{$item->slug}}">Подробнее</a>
                     </div>
                   </div>@endforeach
                 </div>@else

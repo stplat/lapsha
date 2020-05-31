@@ -16,9 +16,9 @@ class AppServiceProvider extends ServiceProvider {
    * @return void
    */
   public function boot() {
-    $meta_keywords = 'православная, лавка, изделия, крестики, бухвицы, браслеты, ручная работа, освещенные';
-    $meta_description = 'Покупка недорогих освещенных православных ювелирных изделий ручной работы по низким ценам';
-    $title = 'Интернет-магазин православных изделий "Вечерия"';
+    $meta_keywords = 'кафе, суши, магазин, роллы, супы, азиатская кухня';
+    $meta_description = 'Ресторан (кафе) азиатской кухни с низкими ценами. Найти нас можно по адресу г.Москва, ул. Покровка д.7/9-11 к.1';
+    $title = 'Кафе азиатской кухни «Лапша и Суши на Покровке»';
 
     $category_list = DB::table('category')->leftJoin('product_to_category', 'category.category_id', '=', 'product_to_category.category_id')
       ->select('category.name', 'category.name_2st', 'category.slug')

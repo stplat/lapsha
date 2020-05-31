@@ -7,7 +7,7 @@
   <meta name="keywords" content="{{$meta_keywords}}">
   <meta name="robots" content="">
   <meta name="csrf-token" content="{{csrf_token()}}">
-  <meta name="yandex-verification" content="fc3073a7cce21863" />
+  <meta name="yandex-verification" content="fc3073a7cce21863"/>
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>{{$title}}</title>
@@ -68,7 +68,7 @@
     <div class="container container--flex">
       <div class="header__nav">
         <div class="header-nav"><a class="header-nav__link header-nav__link--home" href="/">Главная</a><a class="header-nav__link header-nav__link--ship" href="/shipping">Доставка</a><a class="header-nav__link header-nav__link--pay" href="/payment">Оплата</a><a
-            class="header-nav__link header-nav__link--cont" href="/contacts">Контакты</a><span class="header-nav__link header-nav__link--cat">Список категорий</span>
+            class="header-nav__link header-nav__link--cont" href="/contacts">Контакты</a><span class="header-nav__link header-nav__link--cat">МЕНЮ</span>
           <div class="header-nav__sub">@foreach ($menu as $menu_items)
               <div class="header-nav__group">{{$menu_items['category']}}</div>@foreach ($menu_items['subcategory'] as $plug => $subcategory)<a class="header-nav__link" href="/catalog/{{$plug}}">{{$subcategory}}</a>@endforeach
             @endforeach
@@ -93,9 +93,9 @@
     <div class="container container--flex">
       <div class="header__props">
         <div class="header-props">
-          <div class="header-props__phone"><a href="tel:+74952039696" itemprop="telephone">+7 (495) 203-96-96</a></div>
+          <div class="header-props__phone"><a href="tel:+79268354441" itemprop="telephone">+7 (926) 835 44 41</a></div>
           <ul class="header-props__ul" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <li>Пн-пт 10:00 - 19:00 (<span itemprop="addressLocality">Москва</span>)</li>
+            <li>Пн-пт 10:00 - 19:00 (<span itemprop="addressLocality">г. Москва,<br/>ул. Покровка д.7/9-11 к.1</span>)</li>
             <li><span class="header-props__callback js-button-callback">Заказать обратный звонок</span></li>
           </ul>
         </div>
@@ -147,7 +147,7 @@
         <li><a href="/cart">Корзина</a></li>
       </ul>
       <div class="footer__feedback">
-        <div class="footer__phone"><a href="tel:+74952039696">+7 (495) 203-96-96</a></div>
+        <div class="footer__phone"><a href="tel:+79268354441">+7 (926) 835 44 41</a></div>
         <div class="footer__text">
           <p>Приём заказов по телефону:<br> пн-пт c 10:00 до 19:00 (МСК)</p>
           <p>Заказы через интернет – круглосуточно</p>
