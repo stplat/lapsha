@@ -13,7 +13,7 @@
           <div class="catalog__filter">
             <div class="filter">
               <div class="filter-box">
-                <div class="filter-box__head">Тип изделия</div>
+                <div class="filter-box__head">МЕНЮ</div>
                 <div class="filter-box__body">
                   <div class="filter-box__slide-box">
                     <div class="filter-slide-box">@foreach ($menu as $menu_items)
