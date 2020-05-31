@@ -11,7 +11,7 @@
   border-radius: 4px;
   padding: 12px 24px;
   text-align: center;
-  transition: background-color 0.15s;
+  transition: background-color 0.15s, opacity 0.15s;
   font-weight: 500;
   cursor: pointer;
 
@@ -25,12 +25,36 @@
   }
 }
 
-.button--pink {
-  background: $pink-color;
+.button--orange {
+  line-height: 31px;
+  padding: 0 0 1px 30px;
+  text-align: left;
+  font-size: 13px;
+  background: url(../../components/slider/btn.svg) no-repeat;
+  opacity: 0.9;
+  font-weight: 400;
 
   .no-touch &:hover,
   &:active {
-    background-color: $pink-color-hover;
+    background: url(../../components/slider/btn.svg) no-repeat;
+    opacity: 1;
+    //background-color: $pink-color-hover;
+  }
+}
+
+.button--pink {
+  line-height: 54px;
+  padding: 0 0 1px 70px;
+  text-align: left;
+  font-size: 18px;
+  background: url(../../components/slider/btn-red.svg) no-repeat;
+  opacity: 0.8;
+
+  .no-touch &:hover,
+  &:active {
+    background: url(../../components/slider/btn-red.svg) no-repeat;
+    opacity: 1;
+    //background-color: $pink-color-hover;
   }
 }
 

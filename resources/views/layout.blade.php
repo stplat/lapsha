@@ -7,7 +7,7 @@
   <meta name="keywords" content="{{$meta_keywords}}">
   <meta name="robots" content="">
   <meta name="csrf-token" content="{{csrf_token()}}">
-  <meta name="yandex-verification" content="da85a8cc7d3802f8">
+  <meta name="yandex-verification" content="fc3073a7cce21863" />
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>{{$title}}</title>
