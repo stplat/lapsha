@@ -1,0 +1,22 @@
+header.header(itemscope, itemtype="http://schema.org/Organization")
+  .header__cap
+    .container.container--flex
+      .header__nav
+        include header-nav/header-nav
+      .header__bar
+        include header-bar/header-bar
+      .header__filter
+        include header-filter/header-filter
+  .header__body
+    .container.container--flex
+      .header__props
+        include header-props/header-props
+      .header__logo
+        <meta itemprop="name" content="ВЕЧЕРИЯ">
+        <meta itemprop="email" content="info@vecheria.ru">
+        include ../logo/logo
+        +logo()
+        .header__search
+          include header-search/header-search
+      .header__cart
+        include header-cart/header-cart

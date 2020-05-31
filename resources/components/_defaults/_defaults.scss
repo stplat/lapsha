@@ -1,0 +1,87 @@
+/* Переменные */
+@import '../_defaults/variables';
+@import './auto-search-select/auto-search-select';
+@import './input/input';
+@import './checkbox/checkbox';
+@import './select/select';
+@import '~normalize.css';
+
+/* Общие стили */
+* {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box !important;
+}
+
+html {
+  touch-action: manipulation;
+  height: 100%;
+}
+
+body {
+  font-family: $font-family;
+  background: #F9F9FA;
+  color: $text-color;
+  min-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+
+  &.is-popup {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+
+  &:active, &:focus, &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &[href^=tel] {
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+
+  body > & {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+

@@ -1,0 +1,145 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.product-desc {
+
+}
+
+.product-desc__tab {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: $text-color-opacity;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    padding: 12px 20px;
+    border-radius: 4px 4px 0 0;
+    font-size: 14px;
+    margin: 0 3px 0 0;
+    background-color: #FDFDFD;
+    transition: background-color 0.08s, color 0.08s, top 0.05s, border-color 0.08s;
+    top: 3px;
+    user-select: none;
+    border-top: 2px solid transparent;
+
+    &:after {
+      background-color: transparent;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      left: 0;
+      bottom: -6px;
+      z-index: 1;
+      transition: background-color 0.08s;
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin: 0;
+      top: 0;
+
+      &:last-child.is-active,
+      .no-touch &:last-child:hover {
+        &:after {
+          background: #FFFFFF;
+          display: block !important;
+        }
+      }
+    }
+
+    &.is-active,
+    .no-touch &:hover {
+      background: #FFFFFF;
+      top: -1px;
+      color: $orange-color-hover;
+      border-color: $orange-color;
+
+      &:after {
+        background: #FFFFFF;
+      }
+    }
+  }
+
+}
+
+.product-desc__body {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  padding: 20px;
+  position: relative;
+}
+
+.product-desc__text {
+  margin: -10px 0;
+
+  p {
+    color: $text-color;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 10px 0;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    color: $text-color;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+
+  li {
+    margin: 7px 0;
+
+    &:before {
+      content: '—';
+      padding: 0 5px 0 0;
+    }
+  }
+
+  a {
+    color: $orange-color-hover;
+    border-bottom: 1px dotted $orange-color-hover;
+    font-weight: normal;
+    transition: border-color 0.08s;
+
+    .no-touch &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.product-desc__screen {
+  display: none;
+  font-size: 15px;
+  line-height: 22px;
+
+  &.is-active {
+    display: block;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}

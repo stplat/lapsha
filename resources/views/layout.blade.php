@@ -9,7 +9,7 @@
   <meta name="csrf-token" content="{{csrf_token()}}">
   <meta name="yandex-verification" content="da85a8cc7d3802f8">
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <title>{{$title}}</title>
 </head>
 <body>
@@ -197,6 +197,6 @@
   </div>
 </div><!-- Yandex.Metrika counter -->
 <!-- /Yandex.Metrika counter -->
-<script src="{{ asset('js/main.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

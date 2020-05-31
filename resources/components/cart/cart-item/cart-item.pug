@@ -1,0 +1,27 @@
+| @foreach ($items as $key => $item)
+.cart-item(id!="{{$item->product_id}}", data-article!="{{$item->article}}")
+  .cart-item__col
+    .cart-item__image
+      img(src!="/images/items/{{$item->slug}}.jpg", alt!="{{$item->name}}", title!="{{$item->name}}")
+  .cart-item__col
+    .cart-item__title Наименование:
+    .cart-item__name
+      a(href!="/catalog/{{$item->category_slug}}/{{$item->slug}}") {{$item->name}}
+    .cart-item__price {{$item->price}}
+  .cart-item__col
+    .cart-item__title Количество:
+    .cart-item__number
+      select(name="count")
+        | @for ($i = 1; $i < 11; $i++)
+        | @if ($item->count == $i)
+        option(value!="{{$i}}", selected="selected") {{$i}}
+        | @else
+        option(value!="{{$i}}") {{$i}}
+        | @endif
+        | @endfor
+  .cart-item__col
+    .cart-item__title Сумма:
+    .cart-item__total {{$item->total}}
+  span.cart-item__remove
+| @endforeach
+|

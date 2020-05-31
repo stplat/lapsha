@@ -1,0 +1,72 @@
+.product(id!="{{$product->product_id}}", itemscope, itemtype="http://schema.org/Product")
+  .product__wrapper
+    .product__col.product__col--left
+      .product__name
+        h1(itemprop="name") {{$h1}}
+      .product__article(itemprop="model") {{$product->article}}
+      <meta itemprop="brand" content="{{$product->manufacturer}}">
+      <meta itemprop="description" content="{{strip_tags($product->description)}}">
+      .product__image
+        include product-image/product-image
+    .product__col(itemprop="offers", itemscope, itemtype="http://schema.org/Offer")
+      .product__price
+        p(itemprop="price") {{$product->price}}
+        <meta itemprop="priceCurrency" content="RUB">
+        <meta itemprop="priceValidUntil" content="2020-12-31T21:30">
+      .product__row
+        ul.product__params
+          | @if ($product->manufacturer)
+          li
+            span Производитель:
+            span {{$product->manufacturer}}
+          | @endif
+          | @if ($product->weight)
+          li
+            span Средний вес:
+            span {{$product->weight}}
+          | @endif
+          | @if ($product->material)
+          li
+            span Материал:
+            span {{$product->material}}
+          | @endif
+          | @if ($product->technic)
+          li
+            span Техника:
+            span {{$product->technic}}
+          | @endif
+          | @if ($product->dimension)
+          li
+            span Размеры:
+            span {{$product->dimension}}
+          | @endif
+          li
+            span Наличие:
+            span.green(itemprop="availability", content="http://schema.org/InStock") на складе
+        | @if ($product->comment)
+        .product__comment {!! $product->comment !!}
+        | @endif
+      .product__holy
+        p Изделие освящено
+      .product__row
+        include ../button/button
+        | @if (!$in_cart)
+        .product__button
+          +button('В корзину', 'button--red', '#', 'ym("47722900", "reachGoal", "CART"); return true;')
+        .product__buy
+          span.js-button-buy Быстрая покупка
+        | @else
+        .product__alert Товар в корзине
+        .product__buy
+          a(href="/cart") Перейти в корзину
+        | @endif
+  .product__description
+    include product-desc/product-desc
+  include ../title/title
+  include ../item/item
+  | @if ($product->similar_product_id)
+  +title('h3', 'Похожие товары')
+  +similarProductSlider()
+  | @endif
+
+

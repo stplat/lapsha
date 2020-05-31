@@ -1,1 +1,31 @@
-//
+/* Общие стили */
+@import '../components/_defaults/defaults';
+
+/* Компоненты */
+@import '../components/header/header';
+@import '../components/logo/logo';
+@import '../components/menu/menu';
+@import '../components/slider/slider';
+@import '../components/button/button';
+@import '../components/title/title';
+@import '../components/item/item';
+@import '../components/aboutus/aboutus';
+@import '../components/breadcrumbs/breadcrumbs';
+@import '../components/footer/footer';
+@import '../components/catalog/catalog';
+@import '../components/filter/filter';
+@import '../components/product/product';
+@import '../components/text/text';
+@import '../components/cart/cart';
+@import '../components/popup/popup';
+@import '../components/error404/error404';
+@import '../components/search/search';
+@import '../components/up/up';
+
+@import '~swiper/css/swiper.min.css';
+
+
+
+
+
+

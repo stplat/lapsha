@@ -1,0 +1,79 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.menu__container {
+  background: $orange-color;
+  display: block;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+
+  li {
+    flex-grow: 1;
+    position: relative;
+    cursor: pointer;
+
+    &:hover > .menu__plug {
+      background-color: $orange-color-hover;
+    }
+
+    &:hover > .menu__submenu {
+      display: block;
+    }
+
+    &:nth-last-child(1) .menu__submenu
+      /*&:nth-last-child(2) .menu__submenu*/
+    {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.menu__plug {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  padding: 18px 0;
+  background: transparent;
+  transition: background-color 0.15s;
+  display: block;
+}
+
+.menu__submenu {
+  list-style-type: none;
+  background: $orange-color;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 300px;
+  display: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
+
+  li {
+    border-bottom: 1px solid $orange-color;
+    display: block;
+  }
+}
+
+.menu__submenu-link {
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 14px 20px;
+  background: transparent;
+  transition: background-color 0.15s;
+  display: block;
+
+  .no-touch &:hover {
+    background-color: $orange-color-hover;
+  }
+}
+

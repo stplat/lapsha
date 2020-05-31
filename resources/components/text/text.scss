@@ -1,0 +1,78 @@
+/* Переменные */
+@import '../_defaults/variables';
+
+.text {
+  position: relative;
+  font-weight: 300;
+
+  div, p, h1, h2 {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-color;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 24px;
+  }
+
+  &.text--product p {
+    font-size: 15px;
+  }
+
+  a {
+    color: $red-color;
+    border-bottom: 1px dotted $red-color-hover;
+    font-weight: normal;
+    transition: border-color 0.08s;
+
+    .no-touch &:hover {
+      border-color: transparent;
+    }
+  }
+
+  strong {
+    font-weight: 400;
+    //color: $text-color-opacity;
+  }
+
+  .red {
+    color: $red-color;
+    font-weight: 400;
+  }
+}
+
+.text--white-bg {
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  padding: 30px;
+  border-radius: 4px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.text__title {
+  margin: 40px 0 0;
+
+  h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $text-color;
+    font-weight: bold;
+  }
+}
+
+.text__signature {
+  color: $orange-color;
+  text-align: right;
+  font-size: 15px;
+}

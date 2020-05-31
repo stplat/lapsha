@@ -1,0 +1,35 @@
+.catalog.js-catalog
+  .catalog__container
+    .catalog__aside
+      .catalog__filter
+        include ../filter/filter
+    .catalog__content
+      .catalog__title
+        h1 {{$h1}}
+      .catalog__top-panel
+        form(id="sort", hidden)
+        .catalog__select
+          .catalog-select
+            span На странице:
+            select(name="limit", form="sort")
+              optgroup(label="На странице:")
+              option(value="24", selected="selected") 24 изделия
+              option(value="36") 36 изделия
+              option(value="42") 42 изделия
+        .catalog__select
+          .catalog-select
+            span Сортировка:
+            select(name="orderby", form="sort")
+              optgroup(label="Сортировка:")
+              option(value="asc", selected="selected") по Увеличению цены
+              option(value="desc") по Уменьшению цены
+        .catalog__total Показано: <span>{{$items->count()}} изд.</span>
+      include ../item/item
+      +items('3')
+      | @if ($items->count() > 24)
+      .catalog__more Показать еще
+      | @endif
+      | @if ($description)
+      .catalog__comment
+        p {!! $description !!}
+      | @endif

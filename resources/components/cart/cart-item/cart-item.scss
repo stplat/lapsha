@@ -1,0 +1,172 @@
+/* Переменные */
+@import '../../_defaults/variables';
+
+.cart-item {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  padding: 10px 30px 10px 15px;
+  margin: 15px 0;
+  position: relative;
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    padding: 15px 30px 15px 15px;
+  }
+}
+
+.cart-item__remove {
+  position: absolute;
+  color: $red-color-hover;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 20px;
+  opacity: 0.4;
+  transition: opacity 0.08s;
+  cursor: pointer;
+
+  &:after {
+    content: '\E808';
+    font-family: $font-icons;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .no-touch &:hover {
+    opacity: 1;
+  }
+}
+
+.cart-item__col {
+  padding: 0 15px;
+
+  @media only screen and (max-width: 768px) {
+    flex-grow: 1;
+    width: 100% !important;
+    text-align: center;
+    padding: 0 !important;
+    margin: 10px 0;
+  }
+
+  &:nth-child(1) {
+    padding: 20px 15px;
+  }
+
+  &:nth-child(2) {
+    flex-grow: 1;
+    width: 260px;
+  }
+
+  &:nth-child(3) {
+    //flex-grow: 1;
+    width: 120px;
+  }
+
+  &:nth-child(4) {
+    //flex-grow: 1;
+    width: 140px;
+  }
+}
+
+.cart-item__image {
+  height: 70px;
+  width: 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid #EAEAEA;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.cart-item__title {
+  color: $text-color-opacity;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 0 10px 0;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.cart-item__name {
+  line-height: 18px;
+  overflow: hidden;
+  font-weight: 300;
+
+  a {
+    color: $orange-color-hover;
+    background: #FFFFFF;
+    position: relative;
+    z-index: 10;
+    transition: color 0.05s;
+
+    .no-touch &:hover {
+      color: $orange-color;
+    }
+  }
+}
+
+.cart-item__price {
+  content: $text-color;
+  margin: 7px 0 0;
+
+  &:before {
+    content: 'Цена: ';
+  }
+
+  &:after {
+    content: ' руб.';
+  }
+}
+
+.cart-item__number {
+
+  input {
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    color: $text-color;
+    padding: 7px 15px;
+    width: 100%;
+  }
+
+  select {
+    color: $text-color-opacity;
+    position: relative;
+    border: 1px solid rgba(102, 107, 114, .3);
+    padding: 5px 15px 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+
+  option {
+    background-color: #FFFFFF;
+    color: $text-color-opacity;
+    padding: 5px 0 5px 10px;
+    border: 1px solid transparent;
+  }
+}
+
+.cart-item__total {
+  color: $text-color;
+  font-size: 24px;
+  font-weight: bold;
+
+  &:after {
+    content: ' руб.';
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
