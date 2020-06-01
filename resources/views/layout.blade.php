@@ -135,9 +135,7 @@
   <div class="footer__top">
     <div class="container container--flex">
       <div class="footer__logo"><a class="logo" href="/"><img src="{{ asset('images/logo-white.svg') }}" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
-        <div class="footer__props">
-          <p>ИП: Никитин Б.В.<br>ОГРНИП: 313774628200454</p>
-        </div>
+
       </div>
       <ul class="footer__nav">
         <li><a href="/">Главная</a></li>
@@ -157,7 +155,7 @@
   </div>
   <div class="footer__copyright">
     <div class="container">
-      <p>Интернет-магазин православных ювелирных изделий vecheria.ru. All rights reserved ©{{ date('Y') }}г.</p>
+      <p>Кафе азиатской кухни lasushi.ru. All rights reserved ©{{ date('Y') }}г.</p>
     </div>
   </div>
 </footer>
