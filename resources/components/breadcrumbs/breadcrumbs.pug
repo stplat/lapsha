@@ -2,7 +2,7 @@ mixin breadcrumbs(current, last, lastLink)
   ul.breadcrumb(itemscope, itemtype="http://schema.org/BreadcrumbList")
     li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
       a.breadcrumb__link(href!="/", itemprop="item")
-        span(itemprop="name") Православный интернет-магазин «ВЕЧЕРИЯ»
+        span(itemprop="name") Кафе «Лапша и Суши»
         <meta itemprop="position" content="1" />
     if last
       li(itemprop="itemListElement", itemscope, itemtype="http://schema.org/ListItem")
