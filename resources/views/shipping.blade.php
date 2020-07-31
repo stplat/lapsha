@@ -35,6 +35,6 @@
       </p>
       <p>При заказе на сумму <span class="red">10&nbsp;000&nbsp;руб. и более</span> доставка бесплатная.</p>
       <p>Стоимость и срок доставки в Ваш регион уточняйте у нашего менеджера по телефону!</p>
-      <div class="text__signature">С уважением, vecheria.ru!</div>
+      <div class="text__signature">С уважением, lasushi.ru!</div>
     </div>
 </div>@endsection

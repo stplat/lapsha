@@ -102,7 +102,7 @@
       </div>
       <div class="header__logo">
         <meta itemprop="name" content="ВЕЧЕРИЯ">
-        <meta itemprop="email" content="info@vecheria.ru">
+        <meta itemprop="email" content="info@lasushi.ru">
         <a class="logo" href="/" itemprop="url"><img itemprop="logo" src="{{ asset('images/logo.svg') }}" alt="Интернет-магазин ювелирных православных изделий" title="Интернет-магазин ювелирных православных изделий"></a>
         <div class="header__search">
           <form class="header-search" method="GET" action="/search">
@@ -130,7 +130,7 @@
 </div>@yield ('content')
 <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
   <meta itemprop="copyrightYear" content="{{ date('Y') }}">
-  <meta itemprop="copyrightHolder" content="vecheria.ru">
+  <meta itemprop="copyrightHolder" content="lasushi.ru">
   <a class="up" href=""></a>
   <div class="footer__top">
     <div class="container container--flex">

@@ -28,7 +28,7 @@
       <div class="text__title">
         <h2>Электронная почта:</h2>
       </div>
-      <p><a href="mailto:info@vecheria.ru">info@lasushi.ru</a></p>
+      <p><a href="mailto:info@lasushi.ru">info@lasushi.ru</a></p>
       <div class="text__signature">С уважением, lasushi.ru!</div>
     </div>
 </div>@endsection

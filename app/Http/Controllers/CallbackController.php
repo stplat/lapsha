@@ -14,14 +14,14 @@ class CallbackController {
    * @return \Illuminate\Http\Response
    */
   public function index(Request $request) {
-    $to = 'info@vecheria.ru';
+    $to = 'info@lasushi.ru';
     $name = $request->input('name');
     $phone = $request->input('phone');
     $subject = 'Обратный звонок';
     $message = 'ФИО: ' . $name . ', Телефон: ' . $phone;
     $headers = "Content-type: text/html; charset=urf-8 \r\n";
-    $headers .= "From: <info@vecheria.ru>\r\n";
-    $headers .= "Reply-To: info@vecheria.ru\r\n";
+    $headers .= "From: <info@lasushi.ru>\r\n";
+    $headers .= "Reply-To: info@lasushi.ru\r\n";
 
     mail($to, $subject, $message, $headers);
 
