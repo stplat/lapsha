@@ -57,7 +57,7 @@
     </div>
     <div class="title">
       <div class="title__wrap">
-        <h1>Интернет-магазин православных ювелирных изделий «ВЕЧЕРИЯ»</h1>
+        <h1>Кафе «Лапша и Суши»</h1>
       </div>
     </div>
     <div class="aboutus">
