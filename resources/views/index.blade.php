@@ -61,13 +61,10 @@
       </div>
     </div>
     <div class="aboutus">
-      <p>Здравствуйте, рады приветствовать Вас в нашем <strong>интернет-магазине православных изделий Вечерия!</strong></p>
-      <p>У нас Вы сможете по низким ценам приобрести продукцию высочайшего качества от зарекомендовавших себя мастерских со всей страны, которые специализируются на производстве различных <i>православных изделий</i> и <i>ювелирных украшений</i>. В
-        ассортименте представлены нательные кресты, образки, кольца, браслеты, цепи, шнурки и другие изделия, изготовленные из золота, серебра, серебра с позолотой из натуральных и искусственных драгоценные камней, кожи и прочего.</p>
-      <p>Каждый найдет то что-то по душе или выберет в подарок для своих близких!<br></p>
-      <p>Интернет-магазин осуществляет доставку по всей России.</p>
-      <p>На товары предоставляется гарантия от производителя в соответствии с действующим законодательством Российской Федерации.</p>
-      <p>Наш коллектив благодарит Вас за оказанное доверие.</p>
-      <p>Вечерия станет Вашим другом и партнером на долгие годы!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque dolorem ducimus excepturi in iste laudantium modi recusandae temporibus voluptates. Incidunt laudantium libero quisquam tempora. Blanditiis distinctio ipsa neque sunt!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque dolorem ducimus excepturi in iste laudantium modi recusandae temporibus voluptates. Incidunt laudantium libero quisquam tempora. Blanditiis distinctio ipsa neque sunt!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque dolorem ducimus excepturi in iste laudantium modi recusandae temporibus voluptates. Incidunt laudantium libero quisquam tempora. Blanditiis distinctio ipsa neque sunt!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque dolorem ducimus excepturi in iste laudantium modi recusandae temporibus voluptates. Incidunt laudantium libero quisquam tempora. Blanditiis distinctio ipsa neque sunt!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque dolorem ducimus excepturi in iste laudantium modi recusandae temporibus voluptates. Incidunt laudantium libero quisquam tempora. Blanditiis distinctio ipsa neque sunt!</p>
     </div>
   </div>@endsection
